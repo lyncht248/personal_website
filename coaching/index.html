@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benzecry-Lynch Coaching</title>
+  <meta name="description" content="Row faster and get recruited — personal rowing coaching from Tom Lynch and Sebastien Benzecry.">
+  <meta name="author" content="Benzecry-Lynch Coaching">
+  <meta property="og:title" content="Benzecry-Lynch Coaching">
+  <meta property="og:description" content="Row faster and get recruited — personal rowing coaching from Tom Lynch and Sebastien Benzecry.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <link rel="icon" href="/assets/tl-favicon.svg" type="image/svg+xml">
+  <script>
+    // Set theme before first paint to avoid a flash of the wrong colours.
+    (function () {
+      var t;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="layout">
+
+    <aside class="sidebar">
+      <p class="site-name"><a href="/">Tom Lynch</a></p>
+
+      <nav class="site-nav">
+        <a href="/">About</a>
+        <a href="/coaching/" aria-current="page">Coaching</a>
+      </nav>
+
+      <div class="sidebar-meta">
+        <a class="follow-x" href="https://x.com/_tlynch" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+          Follow on X
+        </a>
+
+        <div class="icon-row">
+          <a href="https://www.youtube.com/@TomLynch248" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/thomas-lynch-029376136/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="3.35" cy="3.45" r="2.25"/><rect x="1.3" y="7.8" width="4.1" height="15.2"/><path d="M8.5 7.8h3.95v2.1c.62-1.3 2.12-2.5 4.38-2.5 3.3 0 5.32 2.15 5.32 6.1V23h-4.05v-8.85c0-2.1-.85-3.4-2.65-3.4-1.95 0-3 1.35-3 3.45V23H8.5z"/></svg>
+          </a>
+          <a href="https://github.com/lyncht248" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        </div>
+
+        <div class="theme-toggle">
+          <button id="theme-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="page-head">
+        <p class="eyebrow">Benzecry-Lynch Coaching</p>
+        <h1>Row Faster - Get Recruited</h1>
+        <a class="btn-email" href="mailto:lyncht248@gmail.com?subject=Coaching%20Enquiry">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+          Email to Enquire
+        </a>
+      </header>
+
+      <p>Seb and I are personally coaching some athletes after they dm'd us. If you're interested, you can join in too.</p>
+
+      <p>Here's what we offer:</p>
+
+      <ol>
+        <li>A <strong>weekly training programme</strong> made specially for each athlete. <a href="/assets/sample-programme.pdf" target="_blank" rel="noopener noreferrer">View sample programme</a></li>
+        <li><strong>Video review</strong> of each athlete's technique on the erg and on the water.</li>
+        <li><strong>Daily texts</strong> to keep you accountable. (Often calls too).</li>
+        <li>Answers to any questions you have about nutrition, race planning, mentality, etc.</li>
+      </ol>
+
+      <p>If your goal is to get recruited to a top school (e.g. Cal, Stanford, Ivies, Oxbridge, etc.), we can also walk you through the recruitment process. We'll introduce you to athletes who've been recruited there before, speak to coaches, and act as a technical reference.</p>
+
+      <p>On top of that, we <strong>meet in-person once a week</strong> on The Boat Race course. We do two in-person sessions:</p>
+
+      <ol>
+        <li>A hard erg and/or weights session together in the gym.</li>
+        <li>A row in a big boat (4- or an 8+) with a couple guys from recent Boat Races.</li>
+      </ol>
+
+      <p>It's a lot of fun, and the quickest way to learn rowing. We've seen crazy-fast improvement in our athletes already.</p>
+
+      <p>Obviously, this is a highly personalised programme and we're really invested in the success of each athlete. We won't take on more than 6 athletes. You should be able to travel to Putney once a week.</p>
+
+      <p>If you'd like to apply, send us a brief email with a bit about yourself to <a href="mailto:lyncht248@gmail.com">lyncht248@gmail.com</a>. Include your:</p>
+
+      <ul>
+        <li>Age</li>
+        <li>Goals</li>
+        <li>Current coach if you have one (there's a good chance we know him/her)</li>
+        <li>Previous training experience</li>
+      </ul>
+
+      <p>And we'll set up a call.</p>
+
+      <p>If you are only interested in one part of this programme, feel free to reach out anyway. We'll put together a fully-remote group if there is enough interest.</p>
+
+      <p>Cheers,<br><strong>Tom &amp; Seb</strong></p>
+
+      <hr>
+
+      <h2>The coaches</h2>
+
+      <div class="coaches">
+        <div class="coach">
+          <img src="/assets/tom.jpg" alt="Thomas Lynch" width="480" height="480">
+          <h3>Thomas Lynch</h3>
+          <ul>
+            <li>2-time Boat Race Winner (BB '23, '24)</li>
+            <li>Canadian University Rowing Champion</li>
+            <li>Fastest at Cambridge on the erg in '24</li>
+            <li>Watch me yap <a href="https://www.youtube.com/playlist?list=PLW1HQcl8gxNFd7AEx2d_gc7OFLYsk6XhE" target="_blank" rel="noopener noreferrer">in these videos</a></li>
+          </ul>
+        </div>
+        <div class="coach">
+          <img src="/assets/seb.jpg" alt="Sebastien Benzecry" width="480" height="480">
+          <h3>Sebastien Benzecry</h3>
+          <ul>
+            <li>3-time Boat Race Winner (BB '21, '23, '24)</li>
+            <li>Princeton Rowing Alum</li>
+            <li>Currently coach at St. Pauls School</li>
+            <li>Watch me yap <a href="https://youtu.be/yWov6ZD2zCs?si=jfhDCATzr5srMK-j" target="_blank" rel="noopener noreferrer">in this video</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <footer class="page-foot">
+        <p><a href="mailto:lyncht248@gmail.com?subject=Coaching%20Enquiry">lyncht248@gmail.com</a> &nbsp;&middot;&nbsp; &copy; <span id="year">2026</span> Benzecry-Lynch Coaching</p>
+      </footer>
+    </main>
+
+  </div>
+  <script src="/site.js"></script>
+</body>
+</html>
