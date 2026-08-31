@@ -17,11 +17,8 @@ Just edit the HTML. To add a page, copy `coaching/index.html` as a starting poin
 
 The light/dark toggle defaults to the visitor's system preference and remembers their choice in `localStorage`.
 
-## Deploying (moving off Lovable)
+## Deploying
 
-The old site was built in Lovable and served via Vercel; this repo is now the source of truth. Everything is static — no build step — so either free option works:
+Deployed by the Vercel project **personal-website** (in "lyncht248's projects"): every push to `main` auto-deploys to production, no build step, framework "Other". `tomlynch.me` serves the site; `www.tomlynch.me` 308-redirects to the apex.
 
-- **Vercel (recommended — DNS already points there):** [vercel.com/new](https://vercel.com/new) → import `lyncht248/personal_website` → framework preset "Other", leave build command and output directory empty → Deploy. Then in the project: Settings → Domains → add `tomlynch.me`. Vercel will walk through verifying/claiming the domain away from the old Lovable-managed project (usually a TXT record); since the domain's DNS already resolves to Vercel, no other DNS change should be needed.
-- **GitHub Pages:** repo Settings → Pages → Deploy from branch → `main` / root. Then set `tomlynch.me` as the custom domain there and update the domain registrar's A records to GitHub Pages' IPs (`185.199.108.153` through `.111.153`) with a `www` CNAME to `lyncht248.github.io`.
-
-Once the new deploy serves tomlynch.me, the Lovable project can be deleted.
+History: the previous site was built in Lovable and deployed via the `benzecry-lynch-coaching` Vercel project (source: the `lyncht248/benzecry-lynch-coaching` repo). The domains were moved to this project in Aug 2026; the old project/repo remain as an archive of the original React site and can be deleted without affecting anything.
