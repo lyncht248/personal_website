@@ -5,7 +5,7 @@ Personal website of Tom Lynch. Plain static HTML/CSS/JS — no build step, no fr
 ## Structure
 
 - `index.html` — home page (about)
-- `coaching/index.html` — Benzecry-Lynch Coaching page (served at `/coaching/`)
+- `coaching/index.html` — old Benzecry-Lynch Coaching page, kept as a keepsake at `/coaching/`. Deliberately not linked from the nav; the only way in is the hidden full stop after "2023 and 2024" on the home page (or the URL directly)
 - `styles.css` — all styling, including light/dark themes (CSS variables on `html[data-theme]`)
 - `site.js` — theme toggle + footer year
 - `404.html` — not-found page
