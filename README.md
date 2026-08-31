@@ -17,9 +17,11 @@ Just edit the HTML. To add a page, copy `coaching/index.html` as a starting poin
 
 The light/dark toggle defaults to the visitor's system preference and remembers their choice in `localStorage`.
 
-## Deploying
+## Deploying (moving off Lovable)
 
-Everything is static, so any static host works as-is:
+The old site was built in Lovable and served via Vercel; this repo is now the source of truth. Everything is static — no build step — so either free option works:
 
-- **Vercel** (where tomlynch.me currently points): import this repo, framework preset "Other", no build command, output directory `.` — then attach the `tomlynch.me` domain to this project instead of the old Lovable one.
-- **GitHub Pages**: enable Pages on this branch, then point the `tomlynch.me` DNS at GitHub Pages.
+- **Vercel (recommended — DNS already points there):** [vercel.com/new](https://vercel.com/new) → import `lyncht248/personal_website` → framework preset "Other", leave build command and output directory empty → Deploy. Then in the project: Settings → Domains → add `tomlynch.me`. Vercel will walk through verifying/claiming the domain away from the old Lovable-managed project (usually a TXT record); since the domain's DNS already resolves to Vercel, no other DNS change should be needed.
+- **GitHub Pages:** repo Settings → Pages → Deploy from branch → `main` / root. Then set `tomlynch.me` as the custom domain there and update the domain registrar's A records to GitHub Pages' IPs (`185.199.108.153` through `.111.153`) with a `www` CNAME to `lyncht248.github.io`.
+
+Once the new deploy serves tomlynch.me, the Lovable project can be deleted.
