@@ -233,6 +233,18 @@ a.stealth, a.stealth:hover {
 
 .soon { color: var(--muted); }
 
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.caption {
+  font-size: .85rem;
+  color: var(--muted);
+  margin-top: .35em;
+}
+
 hr {
   border: 0;
   border-top: 1px solid var(--rule);
