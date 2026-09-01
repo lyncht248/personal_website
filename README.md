@@ -1,10 +1,17 @@
 # tomlynch.me
 
-Personal website of Tom Lynch. Plain static HTML/CSS/JS — no build step, no framework.
+Personal website of Tom Lynch. Static HTML/CSS/JS; the home page is written in markdown.
+
+## Editing the home page
+
+**Edit `content/home.md`, commit to `main`, done.** Vercel rebuilds and deploys automatically (~30s). Easiest way: open the file on github.com and hit the pencil icon. Notes on what markdown/HTML works are in a comment at the top of that file.
+
+To preview locally: `npm install && node build.js`, then open `index.html` (it's generated — never edit it directly).
 
 ## Structure
 
-- `index.html` — home page (About + Projects / Other link list)
+- `content/home.md` — **the home page content; edit this one**
+- `templates/home.html` + `build.js` — page chrome and the markdown→HTML build (`index.html` is generated, gitignored)
 - `projects/<slug>/index.html` — stub pages for projects without an external link (rowing, eeg, mining, lidar, blender). Each has a "Write-up coming soon." placeholder and a commented-out example showing how to add paragraphs and images
 - `coaching/index.html` — old Benzecry-Lynch Coaching page, kept as a keepsake at `/coaching/`. Deliberately not linked from the nav; the only way in is the hidden full stop after "2023 and 2024" on the home page (or the URL directly)
 - `styles.css` — all styling, including light/dark themes (CSS variables on `html[data-theme]`)
