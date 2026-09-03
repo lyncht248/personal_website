@@ -11,9 +11,9 @@ renderer.heading = (text, level) =>
     ? `<h1 class="page-title">${text}</h1>\n`
     : `<h${level}>${text}</h${level}>\n`;
 
-// External links open in a new tab; internal (/...) links don't.
+// External links and PDFs open in a new tab; other internal (/...) links don't.
 renderer.link = (href, title, text) => {
-  const external = /^https?:\/\//i.test(href);
+  const external = /^https?:\/\//i.test(href) || /\.pdf(#|$)/i.test(href);
   const attrs =
     ` href="${href}"` +
     (title ? ` title="${title}"` : '') +

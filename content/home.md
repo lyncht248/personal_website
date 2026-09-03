@@ -23,7 +23,7 @@ Previously was a varsity rower; won [The Boat Race](https://en.wikipedia.org/wik
 ## Projects / Other
 
 - [et al](https://etal.co)
-- [Universal Autofocus Device for Microscopy (PhD)](https://www.enterprise.cam.ac.uk/opportunities/real-time-autofocus-for-videomicroscopy/)
+- [Universal Autofocus Device for Microscopy (PhD)](/assets/phd-thesis.pdf#page=55)
 - [YouTube series on The Boat Race](https://www.youtube.com/playlist?list=PLW1HQcl8gxNFd7AEx2d_gc7OFLYsk6XhE)
 - [Rowing](/projects/rowing/)
 - [CrowdStream](https://crowdstream.co.uk)
