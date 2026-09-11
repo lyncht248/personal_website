@@ -28,15 +28,18 @@
 
 * { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 15px; /* root scale: everything in rem shrinks with this */
+}
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  /* patrickcollison.com type & rhythm (his 13px/18px ratio), kept at 16px */
+  /* patrickcollison.com type & rhythm (his 13px/18px ratio) at a 15px base */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.4;
   transition: background-color .2s ease, color .2s ease;
 }
@@ -232,6 +235,44 @@ a.stealth, a.stealth:hover {
 }
 
 .soon { color: var(--muted); }
+
+/* ---- project list sort/filter controls ---- */
+
+.proj-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0 0 1.1em;
+}
+
+.proj-controls button {
+  font: inherit;
+  font-size: .8rem;
+  color: var(--muted);
+  background: var(--chip-bg);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: .28em .85em;
+  cursor: pointer;
+}
+
+.proj-controls button:hover {
+  color: var(--text);
+  border-color: var(--faint);
+}
+
+.proj-controls button.active {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.proj-list li { transition: opacity .15s ease; }
+
+.proj-list[data-filter="hardware"] li:not([data-cat="hardware"]),
+.proj-list[data-filter="software"] li:not([data-cat="software"]),
+.proj-list[data-filter="creative"] li:not([data-cat="creative"]) {
+  opacity: .3;
+}
 
 main img {
   max-width: 100%;
