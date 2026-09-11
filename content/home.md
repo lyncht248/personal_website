@@ -27,10 +27,10 @@ In 2026, I earned my PhD from Cambridge for developing a universal autofocus att
 
 My interests include:
 
-- Embodied AI: How much of the physical AI buildout will be humanoids vs. purpose-built robotics?
-- Reindustrialisation: What is needed to 10x the west’s industrial capacity?
-- Consumer hardware: What form-factors are enabled by AI? What is the next iPhone?
-- B2B AI: Where is there an obvious capability overhang, and what is the best way to bring that to market?
+- **Embodied AI.** How much of the physical AI buildout will be humanoids vs. purpose-built robotics?
+- **Reindustrialisation.** What is needed to 10x the west’s industrial capacity?
+- **Consumer hardware.** What form-factors are enabled by AI? What is the next iPhone?
+- **B2B AI.** Where is there an obvious capability overhang, and what is the best way to bring that to market?
 
 ## Projects, etc.
 

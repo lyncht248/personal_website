@@ -30,14 +30,14 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  font-size: 15px; /* root scale: everything in rem shrinks with this */
+  font-size: 13px; /* root scale: everything in rem shrinks with this */
 }
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  /* patrickcollison.com type & rhythm (his 13px/18px ratio) at a 15px base */
+  /* patrickcollison.com type & rhythm, at his actual 13px base */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.4;
