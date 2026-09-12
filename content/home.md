@@ -23,7 +23,7 @@ Notes:
 
 I’m currently building in San Francisco with my brother [Ben Lynch](https://en.wikipedia.org/wiki/Benjamin_Lynch).
 
-In 2026, I earned my PhD from Cambridge, where I developed a universal autofocus attachment for microscopy. I also rowed in the winning ’23 and ’24 Boat Race crews<a class="stealth" href="/coaching/">.</a>
+In 2026, I earned my PhD from Cambridge for developing a universal autofocus attachment for microscopy. I also rowed in the winning ’23 and ’24 Boat Race crews<a class="stealth" href="/coaching/">.</a>
 
 My interests include:
 
