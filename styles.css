@@ -268,9 +268,9 @@ a.stealth, a.stealth:hover {
 
 .proj-list li { transition: opacity .15s ease; }
 
-.proj-list[data-filter="hardware"] li:not([data-cat="hardware"]),
-.proj-list[data-filter="software"] li:not([data-cat="software"]),
-.proj-list[data-filter="creative"] li:not([data-cat="creative"]) {
+.proj-list[data-filter="hardware"] li:not([data-cat~="hardware"]),
+.proj-list[data-filter="software"] li:not([data-cat~="software"]),
+.proj-list[data-filter="creative"] li:not([data-cat~="creative"]) {
   opacity: .3;
 }
 
