@@ -39,7 +39,7 @@ My interests include:
 - [Universal Autofocus Device for Microscopy (PhD)](/assets/phd-thesis.pdf#page=55): A patented device that attaches to any microscope camera port and holds focus using real-time depth estimation {hardware software}
 - [YouTube series on The Boat Race](https://www.youtube.com/@TomLynch248): 10-video series on training for The Boat Race using footage from my v1 Meta Raybans {creative}
 - [Rowing](/projects/rowing/): Rowing 12-15x per week for 7 years
-- [CrowdStream](https://github.com/CleanSweepCode/CrowdStream): A tool to crowdsource livestreams of large events {software}
+- [CrowdStream](https://github.com/CleanSweepCode): A tool to crowdsource livestreams of large events {software}
 - [Mobile EEG](https://github.com/SimPL-UBC/EEG_MoBI): A headset used to detect cortico-muscular coherence despite movement artefacts while walking {hardware}
 - [LiDAR for autonomous driving](/projects/lidar/): Built a scanning LiDAR sensor based on an oscillating MEMS mirror {hardware}
 
