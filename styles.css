@@ -286,6 +286,16 @@ main img {
   margin-top: .35em;
 }
 
+.project-gallery {
+  display: grid;
+  gap: 1.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.project-gallery figure { margin: 0; }
+.project-gallery a { display: block; cursor: zoom-in; }
+.project-gallery img { display: block; width: 100%; }
+
 hr {
   border: 0;
   border-top: 1px solid var(--rule);
