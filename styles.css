@@ -240,7 +240,6 @@ a.stealth, a.stealth:hover {
 
 .proj-controls {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: .5rem;
   margin: 0 0 1.1em;
@@ -267,60 +266,7 @@ a.stealth, a.stealth:hover {
   border-color: var(--text);
 }
 
-.proj-sort {
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  position: relative;
-  isolation: isolate;
-  flex: none;
-  padding: 3px;
-  border-radius: 999px;
-  background: var(--rule);
-}
-
-.proj-sort::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  bottom: 3px;
-  left: 3px;
-  width: calc(50% - 3px);
-  border-radius: inherit;
-  background: var(--bg);
-  box-shadow: 0 1px 4px rgb(0 0 0 / .14);
-  pointer-events: none;
-  transition: transform .18s ease;
-}
-
-.proj-sort[data-order="oldest"]::before { transform: translateX(100%); }
-
-.proj-controls .proj-sort button {
-  position: relative;
-  background: transparent;
-  border: 0;
-  padding: .45em .85em;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
-.proj-controls .proj-sort button[aria-pressed="true"] { color: var(--link); }
-
-.proj-sort button:focus-visible {
-  outline: 2px solid var(--link);
-  outline-offset: 2px;
-}
-
-.proj-filters { display: flex; flex-wrap: wrap; gap: .5rem; }
-
-@media (pointer: coarse) {
-  .proj-controls .proj-sort button { min-height: 44px; }
-}
-
 .proj-list li { transition: opacity .15s ease; }
-
-@media (prefers-reduced-motion: reduce) {
-  .proj-sort::before, .proj-list li { transition: none; }
-}
 
 .proj-list[data-filter="hardware"] li:not([data-cat~="hardware"]),
 .proj-list[data-filter="software"] li:not([data-cat~="software"]),

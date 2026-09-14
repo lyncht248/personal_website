@@ -41,18 +41,13 @@ const firstTag = content.indexOf('data-cat=');
 if (firstTag !== -1) {
   const ulIdx = content.lastIndexOf('<ul>', firstTag);
   const controls = `<div class="proj-controls">
-<div id="proj-sort" class="proj-sort" role="group" aria-label="Project order" data-order="newest">
-<button type="button" data-order="newest" aria-pressed="true" aria-controls="project-list">Newest first</button>
-<button type="button" data-order="oldest" aria-pressed="false" aria-controls="project-list">Oldest first</button>
-</div>
-<div class="proj-filters">
+<button type="button" id="proj-sort" data-state="recent">Recent first</button>
 <button type="button" class="proj-filter" data-cat="hardware">Hardware</button>
 <button type="button" class="proj-filter" data-cat="software">Software</button>
 <button type="button" class="proj-filter" data-cat="creative">Creative</button>
 </div>
-</div>
 `;
-  content = content.slice(0, ulIdx) + controls + '<ul class="proj-list" id="project-list">' + content.slice(ulIdx + 4);
+  content = content.slice(0, ulIdx) + controls + '<ul class="proj-list">' + content.slice(ulIdx + 4);
 }
 
 const banner =

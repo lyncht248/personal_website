@@ -13,8 +13,7 @@ Notes:
 - A project row can end with a category tag: {hardware}, {software} or {creative}.
   For multiple categories, separate them with spaces: {hardware software}.
   Tags don't render — they power the filter buttons, which appear automatically
-  above the first list containing tagged rows. "Newest first" uses the row order
-  written here; "Oldest first" reverses it. Keep the newest projects at the top;
+  above the first list containing tagged rows. "Recent first" flips the order;
   a filter greys out every row not in that category (untagged rows always grey).
 - Anything wrapped in an HTML comment like this block stays in the code but never renders.
 -->
