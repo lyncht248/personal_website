@@ -13,18 +13,24 @@
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
-  // Project list controls: "Recent first" flips the order; a category button
-  // greys out every row not in that category (click again to clear).
-  var sortBtn = document.getElementById('proj-sort');
+  // The source order is newest first. Each sort button selects an explicit order;
+  // category buttons grey out other rows (click again to clear).
+  var sortControl = document.getElementById('proj-sort');
   var list = document.querySelector('.proj-list');
-  if (sortBtn && list) {
-    sortBtn.addEventListener('click', function () {
-      Array.prototype.slice.call(list.children).reverse().forEach(function (li) {
-        list.appendChild(li);
+  if (sortControl && list) {
+    var newestRows = Array.prototype.slice.call(list.children);
+    var sortButtons = sortControl.querySelectorAll('button');
+    sortButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var order = button.dataset.order;
+        if (sortControl.dataset.order === order) return;
+        var rows = order === 'newest' ? newestRows : newestRows.slice().reverse();
+        rows.forEach(function (li) { list.appendChild(li); });
+        sortControl.dataset.order = order;
+        sortButtons.forEach(function (b) {
+          b.setAttribute('aria-pressed', String(b.dataset.order === order));
+        });
       });
-      var nowRecent = sortBtn.dataset.state !== 'recent';
-      sortBtn.dataset.state = nowRecent ? 'recent' : 'oldest';
-      sortBtn.textContent = nowRecent ? 'Recent first' : 'Oldest first';
     });
 
     document.querySelectorAll('.proj-filter').forEach(function (btn) {
