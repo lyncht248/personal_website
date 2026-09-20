@@ -296,6 +296,22 @@ main img {
 .project-gallery a { display: block; cursor: zoom-in; }
 .project-gallery img { display: block; width: 100%; }
 
+/* "< Go back" link at the top of project pages — quiet, not a call to action */
+.back-link {
+  font-size: .9rem;
+  margin: 0 0 1rem;
+}
+
+main .back-link a {
+  color: var(--muted);
+  text-decoration-color: color-mix(in srgb, var(--muted) 40%, transparent);
+}
+
+main .back-link a:hover {
+  color: var(--link);
+  text-decoration-color: currentColor;
+}
+
 hr {
   border: 0;
   border-top: 1px solid var(--rule);
