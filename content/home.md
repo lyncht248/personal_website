@@ -41,12 +41,8 @@ My interests include:
 - [Rowing](/projects/rowing/): Rowing 12-15x per week for 7 years
 - [CrowdStream](https://github.com/CleanSweepCode): A tool to crowdsource livestreams of large events {software}
 - [Mobile EEG](https://github.com/SimPL-UBC/EEG_MoBI): A headset used to detect cortico-muscular coherence despite movement artefacts while walking {hardware}
+- [Computer Vision for Mining](/projects/mining/): Designed pressure sensors, IMU sensors, and camera housings to survive mining environments {hardware software}
 - [LiDAR for autonomous driving](/projects/lidar/): Built a scanning LiDAR sensor based on an oscillating MEMS mirror {hardware}
-
-<!-- Hidden for now. To show it, delete this comment wrapper and move the row up
-so it sits inside the list above (no blank line in between):
-- [Computer Vision for Mining](/projects/mining/): Designed cameras and pressure sensors for extreme temperatures and pressures {hardware}
--->
 
 <!-- Hidden for now. To show it, delete this comment wrapper and move the row up
 so it sits inside the list above (no blank line in between):
