@@ -268,9 +268,9 @@ a.stealth, a.stealth:hover {
 
 .proj-list li { transition: opacity .15s ease; }
 
-.proj-list[data-filter="hardware"] li:not([data-cat="hardware"]),
-.proj-list[data-filter="software"] li:not([data-cat="software"]),
-.proj-list[data-filter="creative"] li:not([data-cat="creative"]) {
+.proj-list[data-filter="hardware"] li:not([data-cat~="hardware"]),
+.proj-list[data-filter="software"] li:not([data-cat~="software"]),
+.proj-list[data-filter="creative"] li:not([data-cat~="creative"]) {
   opacity: .3;
 }
 
@@ -295,6 +295,70 @@ main img {
 .project-gallery figure { margin: 0; }
 .project-gallery a { display: block; cursor: zoom-in; }
 .project-gallery img { display: block; width: 100%; }
+
+/* two small photos side by side (erg screens); cropped to 3:4 so they line up */
+.gallery-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.gallery-pair img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* click-to-reveal photo: blurred behind a pill label until clicked (site.js) */
+.reveal a {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reveal img {
+  filter: blur(20px);
+  transform: scale(1.06);
+  transition: filter .3s ease, transform .3s ease;
+}
+
+.reveal-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal-label span {
+  padding: .35em .95em;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--text);
+  font-size: .85rem;
+}
+
+.reveal.is-open a { cursor: zoom-in; }
+.reveal.is-open img { filter: none; transform: none; }
+.reveal.is-open .reveal-label { display: none; }
+
+/* "< Go back" link at the top of project pages — quiet, not a call to action */
+.back-link {
+  font-size: .9rem;
+  margin: 0 0 1rem;
+}
+
+main .back-link a {
+  color: var(--muted);
+  text-decoration-color: color-mix(in srgb, var(--muted) 40%, transparent);
+}
+
+main .back-link a:hover {
+  color: var(--link);
+  text-decoration-color: currentColor;
+}
 
 hr {
   border: 0;

@@ -42,4 +42,13 @@
       });
     });
   }
+  // Click-to-reveal photos (.reveal): the first click un-blurs the image
+  // instead of opening it; after that the link works as normal.
+  document.querySelectorAll('.reveal').forEach(function (fig) {
+    fig.addEventListener('click', function (e) {
+      if (fig.classList.contains('is-open')) return;
+      e.preventDefault();
+      fig.classList.add('is-open');
+    });
+  });
 })();

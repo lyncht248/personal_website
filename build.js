@@ -21,10 +21,10 @@ renderer.link = (href, title, text) => {
   return `<a${attrs}>${text}</a>`;
 };
 
-// A list row ending in {hardware}, {software} or {creative} gets that tag as a
-// data attribute (for the filter buttons) instead of rendering it as text.
+// Category tags such as {hardware} or {hardware software} become space-separated
+// data attribute values (for the filter buttons) instead of rendering as text.
 renderer.listitem = (text) => {
-  const m = text.match(/\s*\{(hardware|software|creative)\}\s*$/i);
+  const m = text.match(/\s*\{((?:hardware|software|creative)(?:\s+(?:hardware|software|creative))*)\}\s*$/i);
   if (m) return `<li data-cat="${m[1].toLowerCase()}">${text.slice(0, m.index)}</li>\n`;
   return `<li>${text}</li>\n`;
 };
